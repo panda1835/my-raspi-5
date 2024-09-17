@@ -11,7 +11,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="w-full p-5 bg-gray-800 text-white">
+    <nav className="w-full p-5 bg-primaryColor text-white">
       <div className="flex justify-between items-center">
         <h1 className="text-2xl font-bold">Phuc's Raspberry Pi 5</h1>
         {/* Hamburger Button */}
@@ -65,13 +65,13 @@ export default function NavBar() {
             ></path>
           </svg>
         </button>
-        <ul className="flex flex-col items-start mt-20 p-4 space-y-6">
-          <li className="text-lg">
+        <ul className="flex flex-col items-start mt-10 p-4 space-y-6">
+          <li className="text-lg hover:bg-primaryColor w-full p-2">
             <Link href="/" onClick={toggleMenu}>
               Home
             </Link>
           </li>
-          <li className="text-lg">
+          <li className="text-lg hover:bg-primaryColor w-full p-2">
             <Link href="/stats" onClick={toggleMenu}>
               Stats
             </Link>
